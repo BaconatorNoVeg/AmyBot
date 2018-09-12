@@ -1,5 +1,5 @@
 {
-  "name": "discordbot",
+  "name": "amybot",
   "version": "0.0.0",
   "description": "NoVegBot 2.0",
   "main": "bot.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joshua Luce",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "bufferutil": "^4.0.0",
     "discord.js": "^11.4.2",
@@ -16,5 +16,14 @@
     "libsodium-wrappers": "^0.7.3",
     "node-opus": "^0.3.0",
     "uws": "^99.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaconatorNoVeg/AmyBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BaconatorNoVeg/AmyBot/issues"
+  },
+  "homepage": "https://github.com/BaconatorNoVeg/AmyBot#readme"
 }
