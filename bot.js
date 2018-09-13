@@ -51,7 +51,14 @@ let runBot = function () {
                             .on('response', (text) => {
                                 if (text != "") {
                                     console.log("GA Response: " + text);
-                                    msg.reply(text + "\n`Powered by Google Assistant`");
+                                    if (text.includes("your Google Assistant"))
+                                    {
+                                        text = text.replace("your Google Assistant", "Amy");
+                                        msg.reply(text + "\n`Powered by Google Assistant`"); 
+                                    }
+                                    else {
+                                       msg.reply(text + "\n`Powered by Google Assistant`"); 
+                                    }
                                 } else {
                                     console.log("GA Response was blank.");
                                     msg.reply("Sorry, I'm unable to help you with that. :(");
@@ -66,6 +73,8 @@ let runBot = function () {
                         console.log(error);
                     });
                 }
+            } else {
+                msg.reply("Sorry, I don't recognize that command... yet.");
             }
         } else if (msg.isMemberMentioned(bot.user)) {
             //Respond to mentions
